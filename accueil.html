@@ -1,180 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
   <meta charset="UTF-8" />
   
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
-<title>www.senhouse.sn</title>
-  
+  <title>www.senhouse.sn</title>
 <link rel="stylesheet" href="css/style.css" />
-  
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet" />
-
+<link rel="stylesheet" href="responsive.css" />
+<link rel="stylesheet" href="bootstrap.mn.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<style>
+  .carousel{
+    width: 300px;
+    position: relative;
+    margin-left: 200px;
+    margin-right: 80px;
+    margin-top: 50px;
+    
+  }
+  .recherche{
+    margin-top:50px ;
+    width:auto;
+    border: 1px solid  black;
+    background-color: cadetblue;
+  }
+ 
+</style>
 </head>
-
-<<<<<<< HEAD
-=======
 <body>
-    <header>
-        <div>
-            <div class="var1">
-                <sup>
-                    <h1>le site</h1>
-                </sup> Bienvenu chez moi
-            </div>
-            <div class="var">
-                <input type="search" placeholder="recherche"><span class="span">recherche</span>
-            </div>
-        </div>
-        <div>
 
-            <ul class="list">
-                <li>Accueil</li>
-                <li>A propos</li>
-                <li>fortifo</li>
-                <li>partenaire</li>
-                <li>Contact</li>
-            </ul>
-            <br>
-            <div class="image">
-                <img src="bouba.jpeg" alt="kedougou">
-            </div>
-            
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><h1>SenKeurgui</h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Immoneuf <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                A vendre
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Apartement</a>
+                <a class="dropdown-item" href="#">Maison</a>
+                <a class="dropdown-item" href="#">Chambre</a>
+                <a class="dropdown-item" href="#">Propriete commerciale </a>
+                <a class="dropdown-item" href="#">Autre chose</a>
+              </div>
+             
+           
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  A louer
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Apartement</a>
+                  <a class="dropdown-item" href="#">Maison</a>
+                  <a class="dropdown-item" href="#">Chambre</a>
+                  <a class="dropdown-item" href="#">Propriete commerciale </a>
+                  <a class="dropdown-item" href="#">Autre chose</a>
+                </div>
+              </li>&nbsp;&nbsp;&nbsp;
 
-            <h2><sup> Nous sommes DEV</sup></h2>
-
-            une entreprise specialiser sur le developpement web et mobile
-            pour les particuliers et les entreprises locaux du senegal.
-            </p>
-
-        </div>
-
-    </header>
-    <div class="po"><br>
-        LAST POST <br>
-        <br>
-        <table border="1px" class="la">
-            <tr class="k">
-                <td>
-                    <li><img src="bouba.jpeg" alt="voir plus"></li><br>
-                </td>
-                <td>
-                    <li><img src="bouba.jpeg" alt="voir plus"></li><br>
-                </td>
-                <td>
-                    <li><img src="bouba.jpeg" alt="voir plus"></li><br>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="gale">
-        GALERIE
-        <div class="bou">
-            <table border="1">
-                <tr>
-                    <td>
-                        <img src="bouba.jpeg" alt="galerie d'art">
-                    </td>
->>>>>>> 5be6a99521f312d4de613ac7523bc256c58fafe3
-
-<body>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+    Publier votre annonce
+  </button>
   
-<div id="container">
-    
-<header>
-      
-<div class="logo-wrapper">
-        
-<div class="logo">SEN house</div>
-        
-<div class="slogan">Les experes de l'immobilier</div>
-      
-</div>
-      
-<div class="search-bar-wrapper">
-        
-<div class="form-wrapper">
-          
-
-
-        
-</div>
-      
-</div>
-    
-</header>
-    
-<nav>
-      <ul class="nav-bar">
-        
-<li><a href="#">A Louer</a></li>
-        
-<li><a href="#">A Vendre</a></li>
-        
-<li><a href="#">Immoneuf</a></li>
-        
-<li><a href="#">Conseil</a></li>
-        
-<li><a href="#">Contact</a></li>
-      
-</ul>
-    
-</nav>
-    <main>
-      <div class="image-presentation">
-        <h1>Bienvenu sur Sen House</h1>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Renseignez les champs SVP</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <form action="#">
+              <input type="text" name="nom" placeholder="votre nom"> <br><br>
+              <input type="text" name="prenom" placeholder="votre prenom"><br><br>
+              <input type="email" name="email" placeholder="votre email"><br><br>
+              <input type="password" name="mdp" placeholder="votre mot de passe">
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" >Save</button>
+        </div>
       </div>
-      <div>
-        <form action="">
-          <label for=""></label>
+    </div>
+  </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+    Publier votre annonce
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Renseignez les champs SVP</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <form action="#">
+              <input type="text" name="nom" placeholder="votre nom"> <br><br>
+              <input type="text" name="prenom" placeholder="votre prenom"><br><br>
+              <input type="email" name="email" placeholder="votre email"><br><br>
+              <input type="password" name="mdp" placeholder="votre mot de passe">
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" >Save</button>
+        </div>
+      </div>
+    </div>
+  </div>&nbsp;&nbsp;&nbsp;
+  <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Conseil
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Actualite</a>
+        <a class="dropdown-item" href="#">Senkeurgui.com</a>
+        <a class="dropdown-item" href="#">Autre chose</a>
+      </div>
+     
+   
+    </li>&nbsp;&nbsp;&nbsp;
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Mon compte
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Demande</a>
+          <a class="dropdown-item" href="#">Mes favoris</a>
+          <a class="dropdown-item" href="#">annonces</a>
+          <a class="dropdown-item" href="#">deconnexion </a>
+          <a class="dropdown-item" href="#">quitter</a>
+        </div>
+       
+     
+      </li>
+          </ul>
+         
+        </div>
+      </nav>
+  <div class="recherche">
+      <div class="sectioncontainer" data-parentid="62"  id="65" style=""><div class="component filters" data-parentid="65" id="67"  style="">
+          <div class="filters-tab-container row fullscreen align-items-center justify-content-center">
+          <div class="filters-container filter-content col-lg-12 col-md-12">
+          <div class="search-field bg-brand">
+          <form class="search-form loadingspinner clearfix" action="/search" data-culture="/">
+          <div class="row">
+          <div class="col-sm-12 col-xs-12 col-md-3 ">
+          <select aria-label="Mandate Type" class="custom-select-inverse mandateType" data-placeholder="Type" id="type_id" name="type_id" style="width:100%; height:36px;"><option selected="selected" value="1">&#192; Vendre</option>
+          <option value="2">&#192; Louer par Mois</option>
+          <option value="3">&#192; Louer par Jour</option>
+          </select>
+          </div>
+          <script>
+                                      var SEARCH_SHAPE_DATA = {};
+                                  </script>
+          <div class="filter-search col-sm-12 col-xs-12 col-md-9">
+          <div id="locationHolder">
+          <input type="hidden" name="filterversion" value="new" />
+          <select class="form-control filter-select" lang="fr" name="Locations" aria-label="Location" multiple="multiple" size=1 style="width: 100%;"></select>
+          </div>
+          <input type="hidden" name="searchstyle" value="1" />
+          </div>
           <div class="col-sm-12 col-xs-12 col-md-3">
-<select aria-label="Category" class="custom-select inputoffset" data-placeholder="Catégorie" id="category" name="category"><option value=""></option>
-<option value="16">A vendre  (664)</option>
-<option value="1"> A Louer</option>
-</select>
-<input type="text" placeholder="saisir la localite,ville,banlieu,region" width="500px"><br>
-<div class="col-sm-12 col-xs-12 col-md-3">
-  <select aria-label="Category" class="custom-select inputoffset" data-placeholder="Catégorie" id="category" name="category"><option value=""></option>
-  <option value="16">categorie</option>
-  <option value="1"> Appartement(107)</option>
-  <option value="14">Maisons (300)</option>
-  <option value="29"> -- Villas (203)</option>
-  <option value="17">Terrains (233)</option>
-  <option value="13">Propriete&#233;t&#233;s Commerciales (113)</option>
-  <option value="27">Chambres (56)</option>
-  </select>
-  <select aria-label="Category" class="custom-select inputoffset" data-placeholder="Catégorie" id="category" name="category"><option value=""></option>
-    <option value="16">Chambre a coucher  </option>
-    <option value="1"> 1 Chambre a coucher</option>
-    <option value="1"> 2 Chambre a coucher/option>
-        <option value="1">3 Chambre a coucher</option>
-        <option value="1"> 4  Chambre a coucher</option>
-    </select>
-    <select aria-label="Category" class="custom-select inputoffset" data-placeholder="Catégorie" id="category" name="category"><option value=""></option>
-      <option value="16">Salle de banlieu</option>
-      <option value="1"> 1 SAlle de bain</option>
-      <option value="1"> 2 Salle de bain/option>
-          <option value="1">3 Salle de nain</option>
-          <option value="1"> 4 Salle de bain</option>
-      </select>
+          <select aria-label="Category" class="custom-select inputoffset" data-placeholder="Catégorie" id="category" name="category"><option value="">Cat&#233;gorie</option>
+          <option value="16">Appartements (654)</option>
+          <option value="1"> -- Studios (100)</option>
+          <option value="14">Maisons (310)</option>
+          <option value="29"> -- Villas (208)</option>
+          <option value="17">Terrains (236)</option>
+          <option value="13">Propri&#233;t&#233;s Commerciales (122)</option>
+          <option value="27">Chambres (51)</option>
+          </select>
+          </div>
+          <div class="col-sm-6 col-xs-6 col-md-2">
+          <select aria-label="Chambres &#224; coucher" name="minbeds" class="custom-select inputoffset">
+          <option value="" data-display="Chambres &#224; coucher">Chambres &#224; coucher</option>
+          <option value="1">1+ Chambre</option>
+          <option value="2">2+ Chambres &#224; coucher</option>
+          <option value="3">3+ Chambres &#224; coucher</option>
+          <option value="4">4+ Chambres &#224; coucher</option>
+          <option value="5">5+ Chambres &#224; coucher</option>
+          </select>
+          </div>
+          <div class="col-sm-6 col-xs-6 col-md-2">
+          <select aria-label="Salles de bain" name="bathrooms" class="custom-select inputoffset">
+          <option value="" data-display="Salles de bain">Salles de bain</option>
+          <option value="1">1+ Salle de bain</option>
+          <option value="2">2+ Salles de bain</option>
+          <option value="3">3+ Salles de bain</option>
+          <option value="4">4+ Salles de bain</option>
+          <option value="5">5+ Salles de bain</option>
+          </select>
+          </div>
+          <div class="col-sm-12 col-xs-12 col-md-3">
           <input type="text" class="custom-input inputoffset priceformat" aria-label="maxprice" id="maxprice" name="maxprice" placeholder='Prix max.' data-number-delimiter="," />
+          </div>
           <div class="col-sm-12 col-xs-12 col-md-2">
           <button type="submit" class="btn btn-primary btn-block search-listings expand"><span class="glyphicon glyphicon-search"></span> <strong>Rechercher</strong></button>
-        </form>
-      </div>
-    </main>
+          </div>
+          </div>
+          </form>
+          </div>
+          </div>
+          </div>
+    </div>
 
- 
+<div class="carousel mt-50 ml-20">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/bouba.jpeg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/bouba.jpeg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="bouba.jpeg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        
+        
+      </div>
+    </div>
+  
+  <!-- Hero section  -->
+	<section class="hero-section">
+      <div class="hero-slider owl-carousel">
+        <div class="hero-item set-bg" data-setbg="images/hero-slider/1.jpg">
+      
+        <div class="hero-item set-bg" data-setbg="images/hero-slider/2.jpg">
+    
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end  -->
+  
+    <!-- Services section  -->
+    <section class="services-section">
+      <div class="services-warp">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <div class="si-head">
+                  <div class="si-icon">
+                    <img src="images/icons/cogwheel.png" alt="">
+                  </div>
+                  <h5>Mechanical Engineering</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque orci purus, sodales in est quis, blandit sollicitudin est. </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <div class="si-head">
+                  <div class="si-icon">
+                    <img src="images/icons/helmet.png" alt="">
+                  </div>
+                  <h5>Profesional Workers</h5>
+                </div>
+                <p>Quisque orci purus, sodales in est quis, blandit sollicitudin est. Nam ornare ipsum ac accumsan auctor. Donec consequat arcu.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <div class="si-head">
+                  <div class="si-icon">
+                    <img src="images/icons/wind-engine.png" alt="">
+                  </div>
+                  <h5>Green Energy</h5>
+                </div>
+                <p>Sodales in est quis, blandit sollicitudin est. Nam ornare ipsum ac accumsan auctor. Donec con-sequat arcu et commodo interdum. </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <div class="si-head">
+                  <div class="si-icon">
+                    <img src="images/icons/pollution.png" alt="">
+                  </div>
+                  <h5>Power Engineering</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque orci purus, sodales in est quis, blandit sollicitudin est. </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <div class="si-head">
+                  <div class="si-icon">
+                    <img src="images/icons/pumpjack.png" alt="">
+                  </div>
+                  <h5>Oil & Lubricants</h5>
+                </div>
+                <p>Quisque orci purus, sodales in est quis, blandit sollicitudin est. Nam ornare ipsum ac accumsan auctor. Donec consequat arcu.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <div class="si-head">
+                  <div class="si-icon">
+                    <img src="images/icons/light-bulb.png" alt="">
+                  </div>
+                  <h5>Power & Energy</h5>
+                </div>
+                <p>Sodales in est quis, blandit sollicitudin est. Nam ornare ipsum ac accumsan auctor. Donec con-sequat arcu et commodo interdum. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services section end  -->
 
   
-</div>
 
+	<!-- Features section   -->
+	<section class="features-section spad set-bg" data-setbg="images/features-bg.jpg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="feature-box">
+						<img src="images/features/1.jpg" alt="">
+						<div class="fb-text">
+							<h5>Chemichal Reserach</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipi-scing elit. Quisque orci purus, sodales in est quis, blandit sollicitudin est. Nam ornare ipsum ac accumsan auctor. </p>
+							<a href="" class="fb-more-btn">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="feature-box">
+						<img src="images/features/2.jpg" alt="">
+						<div class="fb-text">
+							<h5>Engineering</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipi-scing elit. Quisque orci purus, sodales in est quis, blandit sollicitudin est. Nam ornare ipsum ac accumsan auctor. </p>
+							<a href="" class="fb-more-btn">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12">
+					<div class="feature-box">
+						<img src="images/features/3.jpg" alt="">
+						<div class="fb-text">
+							<h5>Manufactoring</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipi-scing elit. Quisque orci purus, sodales in est quis, blandit sollicitudin est. Nam ornare ipsum ac accumsan auctor. </p>
+							<a href="" class="fb-more-btn">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Features section end  -->
+	<!-- Call to action section  -->
+  
+  
+    <!-- Video section  -->
+    <section class="video-section spad" >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="video-text">
+              
+              <a href="#" class="site-btn">contact us</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="video-box set-bg" data-setbg="img/video-box.jpg">
+              <a href="https://www.youtube.com/watch?v=wbnaHgSttVo" class="video-popup">
+                <i class="fa fa-play"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Video section end  -->
+  
+  
+    <!-- Footer section -->
+    <footer class="footer-section spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget about-widget">
+              <img src="img/logo-light.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consec-tetur adipiscing elit. Quisque orci purus, sodales in est quis, blandit sollicitudin est. Nam ornare ipsum ac accumsan auctor. Donec consequat arcu et commodo interdum. </p>
+              <div class="footer-social">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-dribbble"></i></a>
+                <a href=""><i class="fa fa-behance"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h2 class="fw-title">Useful Resources</h2>
+              <ul>
+                <li><a href="">Jobs Vacancies</a></li>
+                <li><a href="">Client Testimonials</a></li>
+                <li><a href="">Green  Energy</a></li>
+                <li><a href="">Chemical Research</a></li>
+                <li><a href="">Oil Extractions</a></li>
+                <li><a href="">About our Work</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h2 class="fw-title">Our Solutions</h2>
+              <ul>
+                <li><a href="">Metal Industry</a></li>
+                <li><a href="">Agricultural Engineering</a></li>
+                <li><a href="">Green  Energy</a></li>
+                <li><a href="">Chemical Research</a></li>
+                <li><a href="">Oil Extractions</a></li>
+                <li><a href="">Manufactoring</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-7">
+            <div class="footer-widget">
+              <h2 class="fw-title">Contact Us</h2>
+              <div class="footer-info-box">
+                <div class="fib-icon">
+                  <img src="img/icons/map-marker.png" alt="" class="">
+                </div>
+                <div class="fib-text">
+                  <p>Main Str, no 23 NY,<br>New York PK 23589</p>
+                </div>
+              </div>
+              <div class="footer-info-box">
+                <div class="fib-icon">
+                  <img src="img/icons/phone.png" alt="" class="">
+                </div>
+                <div class="fib-text">
+                  <p>+546 990221 123<br>contact@industryalinc.com</p>
+                </div>
+              </div>
+              
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-buttom">
+        <div class="container">
+        <div class="row">
+          <div class="col-lg-4 order-2 order-lg-1 p-0">
+            <div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+          </div>
+          <div class="col-lg-7 order-1 order-lg-2 p-0">
+            <ul class="footer-menu">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="solutions.html">Solutions</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <!-- Footer section end -->
+  
+    <!-- Search model -->
+    
+    <!-- Search model end -->
+    
+    <!--====== Javascripts & Jquery ======-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
-
-
 </html>
+
