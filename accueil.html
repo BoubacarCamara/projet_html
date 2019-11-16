@@ -7,7 +7,7 @@
   <title>www.senhouse.sn</title>
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="responsive.css" />
-<link rel="stylesheet" href="bootstrap.mn.css">
+<link rel="stylesheet" href="bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <style>
   .carousel{
@@ -69,7 +69,7 @@
 
   <!-- Button trigger modal -->
 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
-    Publier votre annonce
+    Demander une propriete 
   </button>
   
   <!-- Modal -->
@@ -175,14 +175,12 @@
           </select>
           </div>
           <script>
-                                      var SEARCH_SHAPE_DATA = {};
-                                  </script>
+            var SEARCH_SHAPE_DATA = {};
+          </script>
           <div class="filter-search col-sm-12 col-xs-12 col-md-9">
           <div id="locationHolder">
-          <input type="hidden" name="filterversion" value="new" />
-          <select class="form-control filter-select" lang="fr" name="Locations" aria-label="Location" multiple="multiple" size=1 style="width: 100%;"></select>
+          <input type="text" name="filterversion" value="new" placeholder="localisation" />
           </div>
-          <input type="hidden" name="searchstyle" value="1" />
           </div>
           <div class="col-sm-12 col-xs-12 col-md-3">
           <select aria-label="Category" class="custom-select inputoffset" data-placeholder="Catégorie" id="category" name="category"><option value="">Cat&#233;gorie</option>
@@ -219,7 +217,7 @@
           <input type="text" class="custom-input inputoffset priceformat" aria-label="maxprice" id="maxprice" name="maxprice" placeholder='Prix max.' data-number-delimiter="," />
           </div>
           <div class="col-sm-12 col-xs-12 col-md-2">
-          <button type="submit" class="btn btn-primary btn-block search-listings expand"><span class="glyphicon glyphicon-search"></span> <strong>Rechercher</strong></button>
+          <button type="submit" class="btn btn-danger btn-block search-listings expand"><span class="glyphicon glyphicon-search"></span> <strong>Rechercher</strong></button>
           </div>
           </div>
           </form>
@@ -227,9 +225,8 @@
           </div>
           </div>
     </div>
-
-<div class="carousel mt-50 ml-20">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <marquee behavior="" direction="left">
+    <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -237,13 +234,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="images/bouba.jpeg" alt="First slide">
+            <img src="https://cdn.pixabay.com/photo/2012/03/04/00/43/architecture-22039__340.jpg">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="images/bouba.jpeg" alt="Second slide">
+            <img src="https://cdn.pixabay.com/photo/2016/01/23/21/58/new-1158139__340.jpg">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="bouba.jpeg" alt="Third slide">
+            <img src="https://cdn.pixabay.com/photo/2014/07/10/17/18/large-home-389271__340.jpg">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -254,13 +251,11 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-        
-        
       </div>
-    </div>
-  
+    </marquee>
+     
   <!-- Hero section  -->
-	<section class="hero-section">
+	<section   class="hero-section">
       <div class="hero-slider owl-carousel">
         <div class="hero-item set-bg" data-setbg="images/hero-slider/1.jpg">
       
@@ -272,7 +267,7 @@
     <!-- Hero section end  -->
   
     <!-- Services section  -->
-    <section class="services-section">
+    <section  class="services-section">
       <div class="services-warp">
         <div class="container">
           <div class="row">
@@ -518,8 +513,10 @@
     <script src="js/main.js"></script>
   
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/jax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+   
 </body>
 </html>
 
